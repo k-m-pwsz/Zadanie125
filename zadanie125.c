@@ -1,24 +1,63 @@
 #include <stdio.h>
-#include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
-int main ()
+
+
+
+int main()
 {
-    float a;
-    float b;
-    float h;
-    float objetosc_prostopadloscianu;
+for(;;)
+{
+int c=68 ;
+int a;
+int b;
+int wynik;
+int pods_a;
+int pods_b;
+int h;
+int wynik2;
+int t;
+int wys_h;
+printf("wybierz cos\n");
+printf("1.pole ptostopadloscianu\n");
+printf("2.pole ostroslupa\n");
+printf("3. wyjscie\n");
+scanf("%d", &c);
+switch (c)
 
-    printf("podaj dlugosc a:");
-    scanf("%f", &a);
+{
 
-    printf("podaj dlugosc b:");
-    scanf("%f", &b);
+case 1:
 
-    printf("podaj wysokosc h:");
-    scanf("%f", &h);
+    printf("wprowadz dlugosc boku a\n");
+    scanf("%d", &a);
+    printf("wprowadz dlugosc boku b\n");
+    scanf("%d", &b);
+    printf("wprowadz wysokosc h\n");
+    scanf("%d", &h);
+    wynik = (a*b)*h;
+    printf("wynik=" "%d\n", wynik);
 
-    objetosc_prostopadloscianu = (a*b)*h;
-    printf("objetosc prostopadloscianu wynosi : %f ", objetosc_prostopadloscianu);
+    break;
+case 2:
+
+    printf("wprowadz dlugosc boku a\n");
+    scanf("%d", &pods_a);
+    printf("wprowadz dlugosc boku b\n");
+    scanf("%d", &pods_b);
+    printf("wprowadz wysokosc h\n");
+    scanf("%d", &wys_h);
+    wynik2 = (pods_a*pods_b)*wys_h;
+    printf("wynik=" "%d\n", wynik2);
+    break;
+case 3:
+   return 0;
+default:
+  printf("Zly wybor\n");
+}
+
+
+}
     return 0;
+
 }
